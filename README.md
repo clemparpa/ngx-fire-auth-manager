@@ -35,13 +35,13 @@
     NgxFireAuthManager is a library for Angular that manage firebase authentication with Nrgx to let you build your apps
     way faster 
     <br />
-    <a href="https://github.com/clemparpa/ngxFireAuthManager"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/clemparpa/ngx-fire-auth-manager"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     ·
-    <a href="https://github.com/clemparpa/ngxFireAuthManager/issues">Report Bug</a>
+    <a href="https://github.com/clemparpa/ngx-fire-auth-manager/issues">Report Bug</a>
     ·
-    <a href="https://github.com/clemparpa/ngxFireAuthManager/issues">Request Feature</a>
+    <a href="https://github.com/clemparpa/ngx-fire-auth-manager/issues">Request Feature</a>
   </p>
 </div>
 
@@ -158,7 +158,7 @@ you can clone the repository here or use npm to install ngx-fire-auth-manager
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/clemparpa/ngxFireAuthManager.git
+   git clone https://github.com/clemparpa/ngx-fire-auth-manager.git
    ```
 
 then you need to build the repo using "ng-test"
@@ -571,7 +571,7 @@ You need to add your custom effects like your own effects in your modules.
 - [ ] add other signUp providers like Facebook, Apple, etc..
 - [ ] refactoring
 
-See the [open issues](https://github.com/clemparpa/ngxFireAuthManager/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/clemparpa/ngx-fire-auth-manager/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -606,21 +606,21 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Clément Parpaillon - clem.parpaillon@gmail.com
 
-Project Link: [https://github.com/clemparpa/ngxFireAuthManager](https://github.com/clemparpa/ngxFireAuthManager)
+Project Link: [https://github.com/clemparpa/ngx-fire-auth-manager](https://github.com/clemparpa/ngx-fire-auth-manager)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/clemparpa/ngxFireAuthManager.svg?style=for-the-badge
-[contributors-url]: https://github.com/clemparpa/ngxFireAuthManager/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/clemparpa/ngxFireAuthManager.svg?style=for-the-badge
-[forks-url]: https://github.com/clemparpa/ngxFireAuthManager/network/members
-[stars-shield]: https://img.shields.io/github/stars/clemparpa/ngxFireAuthManager.svg?style=for-the-badge
-[stars-url]: https://github.com/clemparpa/ngxFireAuthManager/stargazers
-[issues-shield]: https://img.shields.io/github/issues/clemparpa/ngxFireAuthManager.svg?style=for-the-badge
-[issues-url]: https://github.com/clemparpa/ngxFireAuthManager/issues
-[license-shield]: https://img.shields.io/github/license/clemparpa/ngxFireAuthManager.svg?style=for-the-badge
-[license-url]: https://github.com/clemparpa/ngxFireAuthManager/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/clemparpa/ngx-fire-auth-manager.svg?style=for-the-badge
+[contributors-url]: https://github.com/clemparpa/ngx-fire-auth-manager/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/clemparpa/ngx-fire-auth-manager.svg?style=for-the-badge
+[forks-url]: https://github.com/clemparpa/ngx-fire-auth-manager/network/members
+[stars-shield]: https://img.shields.io/github/stars/clemparpa/ngx-fire-auth-manager.svg?style=for-the-badge
+[stars-url]: https://github.com/clemparpa/ngx-fire-auth-manager/stargazers
+[issues-shield]: https://img.shields.io/github/issues/clemparpa/ngx-fire-auth-manager.svg?style=for-the-badge
+[issues-url]: https://github.com/clemparpa/ngx-fire-auth-manager/issues
+[license-shield]: https://img.shields.io/github/license/clemparpa/ngx-fire-auth-manager.svg?style=for-the-badge
+[license-url]: https://github.com/clemparpa/ngx-fire-auth-manager/blob/master/LICENSE.txt
 [product-screenshot]: images/screenshot.png
