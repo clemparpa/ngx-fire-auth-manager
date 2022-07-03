@@ -37,6 +37,8 @@
     <br />
     <a href="https://github.com/clemparpa/ngx-fire-auth-manager"><strong>Explore the docs »</strong></a>
     <br />
+    <a href=https://www.npmjs.com/package/ngx-fire-auth-manager>Visit npm package page</a>
+    <br />
     <br />
     ·
     <a href="https://github.com/clemparpa/ngx-fire-auth-manager/issues">Report Bug</a>
