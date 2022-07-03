@@ -26,7 +26,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/clemparpa/ngx-fire-auth-manager">
-    <img src="logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/clemparpa/ngx-fire-auth-manager/blob/main/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">NgxFireAuthManager</h3>
@@ -622,5 +622,5 @@ Project Link: [https://github.com/clemparpa/ngx-fire-auth-manager](https://githu
 [issues-shield]: https://img.shields.io/github/issues/clemparpa/ngx-fire-auth-manager.svg?style=for-the-badge
 [issues-url]: https://github.com/clemparpa/ngx-fire-auth-manager/issues
 [license-shield]: https://img.shields.io/github/license/clemparpa/ngx-fire-auth-manager.svg?style=for-the-badge
-[license-url]: https://github.com/clemparpa/ngx-fire-auth-manager/blob/master/LICENSE.txt
+[license-url]: https://github.com/clemparpa/ngx-fire-auth-manager/blob/main/LICENSE.txt
 [product-screenshot]: images/screenshot.png
