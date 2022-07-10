@@ -394,6 +394,7 @@ You can make your own ngrx effect to catch the resetUserPasswordSucessAction act
 
 NgxFireAuthManager can be used with a guard to protect your application.
 the auth-guards is a CanActivate Guard that allow user to access to a route only if he is logged in.
+if the guard fails, you can redirect the user by passing an url to 'redirectTo' key in the data's route property.
 
 #### Example of use
 
@@ -406,7 +407,7 @@ the auth-guards is a CanActivate Guard that allow user to access to a route only
     { path: "", redirectTo: "home", pathMatch: "full" },
     { path: "home", component: HomePageComponent },
     // 'user' path is protected from not logged-in users
-    { path: "user", component: UserPageComponent, canActivate: [AuthGuard] },
+    { path: "user", component: UserPageComponent, canActivate: [AuthGuard], data: {redirectTo: ['login'] } },
     { path: "**", redirectTo: "home" },
   ];
   ```
