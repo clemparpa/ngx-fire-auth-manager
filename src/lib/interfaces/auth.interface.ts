@@ -6,6 +6,7 @@ export interface IUser {
   providerId: string;
   emailVerified?: boolean;
   uid: string;
+  claims?: IClaims;
 }
 
 export interface IAuthError {
@@ -18,3 +19,7 @@ export interface IAuthState {
   error: IAuthError | null;
   loading: boolean;
 }
+
+export interface IClaims {
+  [key: string]: any;
+};

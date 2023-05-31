@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '@angular/fire/auth';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { catchError, exhaustMap, map, of, take, tap } from 'rxjs';
+import { catchError, exhaustMap, map, of, take, tap, from, switchMap } from 'rxjs';
 import * as authAction from '../actions/auth-action/auth-action.actions';
 import * as emailLogin from '../actions/email-password-login-action/email-password-login-action.actions';
 import * as googleLoginOrSignUp from '../actions/google-redirect-login-or-signup-action/google-redirect-login-or-signup-action.actions';
@@ -27,24 +27,36 @@ export class AuthEffects {
   @returns ngxFireAuthAuthActionsFailure if no user is connected
   */
   ngxFrthauth$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(authAction.ngxFireAuthAuthActions.type),
-      exhaustMap(() =>
-        this.authOps.getAuthState().pipe(
-          take(1),
-          map((userResp: User | null) => {
-            if (userResp === null) {
-              return authAction.ngxFireAuthAuthActionsFailure();
-            } else {
-              return authAction.ngxFireAuthAuthActionsSuccess({
-                user: new FrthUser(userResp).getIUser(),
-              });
-            }
-          })
-        )
+  this.actions$.pipe(
+    ofType(authAction.ngxFireAuthAuthActions.type),
+    exhaustMap(() =>
+      this.authOps.getAuthState().pipe(
+        take(1),
+        switchMap((userResp: User | null) => {
+          if (!userResp) return of({userResp: null, tokenResult: null});
+
+          return from(userResp.getIdTokenResult()).pipe(
+            map((idTokenResult) => {
+              return {
+                userResp,
+                tokenResult: idTokenResult,
+              };
+            })
+          );
+        }),
+        map((data: {userResp: User | null , tokenResult: any}) => {
+          if (data.userResp === null) {
+            return authAction.ngxFireAuthAuthActionsFailure();
+          } else {
+            return authAction.ngxFireAuthAuthActionsSuccess({
+              user: new FrthUser(data.userResp, data.tokenResult).getIUser(),
+            });
+          }
+        })
       )
     )
-  );
+  )
+);
 
   /**
    * effect that will be triggered on ngxFireAuthEmailPasswordLoginActions
